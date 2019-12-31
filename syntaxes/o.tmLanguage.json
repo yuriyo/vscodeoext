@@ -1,0 +1,122 @@
+{
+    "scopeName": "source.o",
+    "fileTypes": [
+        "o"
+    ],
+    "name": "o",
+    "patterns": [
+        {
+            "begin": "^\/\\s*$",
+            "comment": "string",
+            "end": "^\\\\\\s*$",
+            "name": "comment.block.source.o"
+        },
+        {
+            "begin": "^\\\\\\s*$",
+            "comment": "string",
+            "end": "^\b$",
+            "name": "comment.block.source.o"
+        },
+        {
+            "comment": "string",
+            "match": "^\/\/.*",
+            "name": "comment.line.source.o"
+        },
+        {
+            "comment": "string",
+            "match": "\\s\/\/.*",
+            "name": "comment.line.source.o"
+        },
+        {
+            "comment": "string",
+            "match": "\".*?\"",
+            "name": "string.quoted.string.source.o"
+        },
+        {
+            "comment": "string",
+            "match": "`[:\/a-zA-Z0-9_.]+",
+            "name": "string.interpolated.symbol.source.o"
+        },
+        {
+            "captures": {
+                "2": {
+                    "name": "variable.parameter.complex.source.o"
+                }
+            },
+            "comment": "variable definition",
+            "match": "(?=([^a-zA-Z0-9]|\\b))([a-zA-Z]+[a-zA-Z0-9_\\.]*):",
+            "name": "other.source.o"
+        },
+        {
+            "captures": {
+                "2": {
+                    "name": "variable.parameter.complex.source.o"
+                }
+            },
+            "comment": "variable definition",
+            "match": "(?=([^a-zA-Z0-9]|\\b))([a-zA-Z]+[a-zA-Z0-9_\\.]*)[+-,]:",
+            "name": "other.source.o"
+		},
+		{
+            "captures": {
+                "2": {
+                    "name": "keyword.other.complex.source.o"
+                }
+            },
+            "comment": "o keyword",
+            "match": "(?=(\\W|\\b))(react|reagent|load|meta)(?=(\\W|\\b))",
+            "name": "other.source.o"
+        },
+        {
+            "captures": {
+                "2": {
+                    "name": "keyword.other.complex.source.o"
+                }
+            },
+            "comment": "o keyword",
+            "match": "(?=(\\W|\\b))(abs|acos|aj|aj0|all|and|any|asc|asin|asof|atan|attr|avg|avgs|bin|binr|by|ceiling|cols|cor|cos|count|cov|cross|csv|cut|delete|deltas|desc|dev|differ|distinct|div|do|dsave|each|ej|ema|enlist|eval|except|exec|exit|exp|fby|fills|first|fkeys|flip|floor|from|get|getenv|group|gtime|hclose|hcount|hdel|hopen|hsym|iasc|idesc|if|ij|ijf|in|insert|inter|inv|key|keys|last|like|lj|ljf|load|log|lower|lsq|ltime|ltrim|mavg|max|maxs|mcount|md5|mdev|med|meta|min|mins|mmax|mmin|mmu|mod|msum|neg|next|not|null|or|over|parse|peach|pj|prd|prds|prev|prior|rand|rank|ratios|raze|read0|read1|reciprocal|reval|reverse|rload|rotate|rsave|rtrim|save|scan|scov|sdev|select|set|setenv|show|signum|sin|sqrt|ss|ssr|string|sublist|sum|sums|sv|svar|system|tables|tan|til|trim|type|uj|ujf|ungroup|union|update|upper|upsert|value|var|view|views|vs|wavg|where|while|within|wj|wj1|wsum|ww|xasc|xbar|xcol|xcols|xdesc|xexp|xgroup|xkey|xlog|xprev|xrank)(?=(\\W|\\b))",
+            "name": "other.source.o"
+        },
+        {
+            "captures": {
+                "2": {
+                    "name": "constant.numeric.complex.source.o"
+                }
+            },
+            "comment": "datetime",
+            "match": "(?=(\\W|\\b))([0-9]{4}\\.[0-9]{2}\\.[0-9]{2}[TD]?[0-9]{2}:[0-9]{2}:[0-9]{2}(:[0-9]{2})?(\\.[0-9]{3,6})?)(?=(\\W|\\b))",
+            "name": "other.source.o"
+        },
+        {
+            "captures": {
+                "2": {
+                    "name": "constant.numeric.complex.source.o"
+                }
+            },
+            "comment": "time",
+            "match": "(?=(\\W|\\b))([0-9]{4}\\.[0-9]{2}\\.[0-9]{2}[TD]?)(?=(\\W|\\b))",
+            "name": "other.source.o"
+        },
+        {
+            "captures": {
+                "2": {
+                    "name": "constant.numeric.complex.source.o"
+                }
+            },
+            "comment": "date",
+            "match": "(?=(\\W|\\b))([0-9]{2}:[0-9]{2}:[0-9]{2}(:[0-9]{2})?(\\.[0-9]{3,6})?)(?=(\\W|\\b))",
+            "name": "other.source.o"
+        },
+        {
+            "captures": {
+                "2": {
+                    "name": "constant.numeric.complex.source.o"
+                }
+            },
+            "comment": "boolean,short,integer,long",
+            "match": "(?=(\\W|\\b))([-]?[0-9]+[bhijef]{0,1}(\\.[0-9]+[m]?)?|0x[a-f0-9]+)(?=(\\W|\\b))",
+            "name": "other.source.o"
+        }
+    ],
+    "uuid": "c75d39a7-6b74-4164-8e0f-363b1513721c"
+}
