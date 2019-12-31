@@ -3,7 +3,7 @@
     "name": "O-platform",
     "displayName": "o",
     "description": "O-platform source code",
-    "version": "0.3.0",
+    "version": "0.4.0",
     "engines": {
         "vscode": "^1.41.0"
     },
