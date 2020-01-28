@@ -7,7 +7,7 @@
     "name": "o",
     "patterns": [
         {
-            "begin": "\/\/\\*$",
+            "begin": "\/\/\\*",
             "comment": "string",
             "end": "\\*\/\/",
             "name": "comment.block.source.o"
