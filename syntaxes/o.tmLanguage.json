@@ -1,20 +1,15 @@
 {
     "scopeName": "source.o",
     "fileTypes": [
-        "o"
+        "o",
+        "olang"
     ],
     "name": "o",
     "patterns": [
         {
-            "begin": "^\/\\s*$",
+            "begin": "\/\/\\*$",
             "comment": "string",
-            "end": "^\\\\\\s*$",
-            "name": "comment.block.source.o"
-        },
-        {
-            "begin": "^\\\\\\s*$",
-            "comment": "string",
-            "end": "^\b$",
+            "end": "\\*\/\/",
             "name": "comment.block.source.o"
         },
         {
@@ -64,7 +59,7 @@
                 }
             },
             "comment": "o keyword",
-            "match": "(?=(\\W|\\b))(react|reagent|load|meta)(?=(\\W|\\b))",
+            "match": "(?=(\\W|\\b))(react|reagent|load|meta|spawn|elif|else|upsert)(?=(\\W|\\b))",
             "name": "other.source.o"
         },
         {
