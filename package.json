@@ -3,7 +3,7 @@
 	"name": "oplatform",
 	"displayName": "o",
 	"description": "O-platform source code",
-	"version": "0.6.0",
+	"version": "0.6.1",
 	"engines": {
 		"vscode": "^1.41.0"
 	},
@@ -43,5 +43,5 @@
 	"repository": {
 		"type": "git",
 		"url": "git@github.com:yuriyo/vscodeoext.git"
-	}	
+	}
 }
