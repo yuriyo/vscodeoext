@@ -1,25 +1,20 @@
 {
     "scopeName": "source.o",
-    "fileTypes": [
-        "o",
-        "olang"
-    ],
-    "name": "o",
     "patterns": [
         {
-            "begin": "\/\/\*.*",
+            "begin": "\/\/\\*.*",
             "comment": "string",
-            "end": ".*\*\/\/",
+            "end": ".*\\*\/\/",
             "name": "comment.block.source.o"
         },
         {
             "comment": "string",
-            "match": "^\/\/.*",
+            "match": "^//.*",
             "name": "comment.line.source.o"
         },
         {
             "comment": "string",
-            "match": "\\s\/\/.*",
+            "match": "\\s//.*",
             "name": "comment.line.source.o"
         },
         {

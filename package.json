@@ -1,35 +1,42 @@
 {
-    "publisher": "YuriyOsadchy",
-    "name": "O-platform",
-    "displayName": "o",
-    "description": "O-platform source code",
-    "version": "0.5.2",
-    "engines": {
-        "vscode": "^1.41.0"
-    },
-    "categories": [
-        "Programming Languages"
-    ],
-    "contributes": {
-        "languages": [
-            {
-                "id": "o",
-                "aliases": [
-                    "o",
-                    "o"
-                ],
-                "extensions": [
-                    ".o"
-                ],
-                "configuration": "./language-configuration.json"
-            }
-        ],
-        "grammars": [
-            {
-                "language": "o",
-                "scopeName": "source.o",
-                "path": "./syntaxes/o.tmLanguage.json"
-            }
-        ]
-    }
+	"publisher": "YuriyOsadchy",
+	"name": "oplatform",
+	"displayName": "o",
+	"description": "O-platform source code",
+	"version": "0.5.2",
+	"engines": {
+		"vscode": "^1.41.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "o",
+				"aliases": [
+					"o",
+					"olang",
+					"O",
+					"OLANG"
+				],
+				"extensions": [
+					".o", ".olang"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "o",
+				"scopeName": "source.o",
+				"path": "./syntaxes/o.tmLanguage.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "85b32b11-5564-46d2-82b1-96c6cb40c7af",
+		"publisherId": "4f05ef19-a15b-40ef-851d-f1f7a960a99c",
+		"publisherDisplayName": "YuriyOsadchy"
+	}
 }
