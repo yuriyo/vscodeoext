@@ -3,7 +3,7 @@
 	"name": "oplatform",
 	"displayName": "o",
 	"description": "O-platform source code",
-	"version": "0.5.2",
+	"version": "0.6.0",
 	"engines": {
 		"vscode": "^1.41.0"
 	},
@@ -21,7 +21,8 @@
 					"OLANG"
 				],
 				"extensions": [
-					".o", ".olang"
+					".o",
+					".olang"
 				],
 				"configuration": "./language-configuration.json"
 			}
