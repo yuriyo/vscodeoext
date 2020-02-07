@@ -2,7 +2,7 @@
     "scopeName": "source.o",
     "patterns": [
         {
-            "begin": "\/\/\\*.*",
+            "begin": "\\s*\/\/\\*.*",
             "comment": "string",
             "end": ".*\\*\/\/",
             "name": "comment.block.source.o"
